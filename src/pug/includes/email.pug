@@ -13,7 +13,7 @@ mixin table
   let firstname = 'FIRSTNAME'; 
   let lastname = 'LASTNAME'; 
   let title = 'TITLE';
-  let marginTop = '16px';
+  let marginTop = '36px';
   let marginBottom = '16px';
   let avaColWidth = '32px';
   let gutterWidth = '22px';
@@ -27,8 +27,10 @@ mixin table
         
 +table
   tr
-    td(height=`${marginTop}`, style='font-size: 0px;') &nbsp;
     td
+      +table
+        tr
+          td(height=`${marginTop}`, style='font-size: 0px;') &nbsp;
       +table
         tr
           td(width=`${avaColWidth}`, style='vertical-align: top;') 
@@ -65,11 +67,13 @@ mixin table
                 td(style=`font-family: ${sys}; color: ${black}; font-size: 16px;`) 
                   a(href=`https://www.savaslabs.com/?utm_source=email_signature&utm_medium=email&utm_campaign=email_signature&utm_content=${firstname}_${lastname}`, style=`color: ${black};`) Savas Labs
                   span(style=`color: ${red}`)  — 
-                  a(href='tel:+19194324660', style=`color: ${black};`) 919 432 4660
+                  a(href='tel:+19194324660', style=`color: ${black};`) (919) 432-4660
             +table
               tr
                 td(height=`${spaceUnderName}`, style='font-size: 0px;') &nbsp;
             +table
               tr
                 td(style=`font-family: ${sys}; color: ${black}; font-size: 16px;`) We design and build<br>digital products.
-    td(height=`${marginBottom}`, style='font-size: 0px;') &nbsp;
+      +table
+        tr
+          td(height=`${marginBottom}`, style='font-size: 0px;') &nbsp;
