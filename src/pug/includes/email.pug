@@ -15,14 +15,14 @@ mixin table
   let title = 'TITLE';
   let marginTop = '36px';
   let marginBottom = '16px';
-  let avaColWidth = '32px';
-  let gutterWidth = '22px';
-  let ruleHeight = '4px';
-  let spaceUnderRule = '20px';
-  let spaceUnderName='18px';
-  let spaceUnderTitle='6px';
+  let avaColWidth = '20px';
+  let gutterWidth = '11px';
+  let ruleHeight = '3px';
+  let spaceUnderRule = '12px';
+  let spaceUnderName = '14px';
+  let spaceUnderTitle = '5px';
   let red = '#F35A69';
-  let black= '#221C35';
+  let black = '#221C35';
   let sys = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
         
 +table
@@ -40,7 +40,7 @@ mixin table
             +table
               tr
                 td(height=`${spaceUnderRule}`, style='font-size: 0px;') &nbsp;
-            img(alt='The Savas Labs owl pictograph', src='https://signature.savaslabs.com/images/ava.jpg')
+            img(alt='The Savas Labs owl pictograph', width='20', height='30', src='https://signature.savaslabs.com/images/ava-retina.jpg')
                 
           td(width=`${gutterWidth}`)
           td.content
@@ -52,19 +52,19 @@ mixin table
                 td(height=`${spaceUnderRule}`, style='font-size: 0px;') &nbsp;
             +table
               tr
-                td(style=`font-family: ${sys}; color: ${red}; font-weight: 900; font-size: 28px; line-height: 26px;`) #{firstname}<br>#{lastname}
+                td(style=`font-family: ${sys}; color: ${red}; font-weight: 900; font-size: 18px; line-height: 17px;`) #{firstname}<br>#{lastname}
             +table
               tr
                 td(height=`${spaceUnderName}`, style='font-size: 0px;') &nbsp;
             +table
               tr
-                td(style=`font-family: ${sys}; color: ${black}; font-size: 16px;`) #{title}
+                td(style=`font-family: ${sys}; color: ${black}; font-size: 13px;`) #{title}
             +table
               tr
                 td(height=`${spaceUnderTitle}`, style='font-size: 0px;') &nbsp;
             +table
               tr
-                td(style=`font-family: ${sys}; color: ${black}; font-size: 16px;`) 
+                td(style=`font-family: ${sys}; color: ${black}; font-size: 13px;`) 
                   a(href=`https://www.savaslabs.com/?utm_source=email_signature&utm_medium=email&utm_campaign=email_signature&utm_content=${firstname}_${lastname}`, style=`color: ${black};`) Savas Labs
                   span(style=`color: ${red}`)  — 
                   a(href='tel:+19194324660', style=`color: ${black};`) (919) 432-4660
@@ -73,7 +73,7 @@ mixin table
                 td(height=`${spaceUnderName}`, style='font-size: 0px;') &nbsp;
             +table
               tr
-                td(style=`font-family: ${sys}; color: ${black}; font-size: 16px;`) We design and build<br>digital products.
+                td(style=`font-family: ${sys}; color: ${black}; font-size: 13px;`) We design and build<br>digital products.
       +table
         tr
           td(height=`${marginBottom}`, style='font-size: 0px;') &nbsp;
