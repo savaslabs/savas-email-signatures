@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Savas Labs Email Signature Generator</h1>
+    </header>
+    <ol>
+      <li>Fill out and submit the form below, which will download your signature file</li>
+      <li>Open your <code>signature_firstname_lastname.html</code> file in Google Chrome</li>
+      <li>Click the body of the webpage, select all (<kbd>⌘</kbd> + <kbd>a</kbd>), and copy (<kbd>⌘</kbd> + <kbd>c</kbd>) the page content</li>
+      <li>Go to <a href="https://mail.google.com/mail/u/0/#settings/general" target="_blank">Google Mail Settings</a> and paste (<kbd>⌘</kbd> + <kbd>v</kbd>) the email signature into the the <b>Signature</b> field</li>
+      <li>Scroll to the bottom of the page and click <b>Save Changes</b></li>
+    </ol>
+    <form>
+      <fieldset>
+        <legend>My Information</legend><label><span>First Name:</span><input id="firstname" type="text" required="required" /></label><label><span>Last Name:</span><input id="lastname" type="text" required="required" /></label><label><span>Title:</span><input id="title" type="text" required="required" /></label><button id="submit" type="submit">Generate</button>
+      </fieldset>
+    </form>
+  </main><template id="signature">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td height="16px" style="font-size: 0px;">&nbsp;</td>
+        <td>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td width="32px" style="vertical-align: top;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="4px" style="font-size: 0px; background-color: #F35A69;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="20px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table><img alt="The Savas Labs owl pictograph" src="https://signature.savaslabs.com/images/ava.jpg" />
+              </td>
+              <td width="22px"></td>
+              <td class="content">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="4px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="20px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif; color: #F35A69; font-weight: 900; font-size: 28px; line-height: 26px;">FIRSTNAME<br>LASTNAME</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="18px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif; color: #221C35; font-size: 16px;">TITLE</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="6px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif; color: #221C35; font-size: 16px;"> <a href="https://www.savaslabs.com/?utm_source=email_signature&amp;utm_medium=email&amp;utm_campaign=email_signature&amp;utm_content=FIRSTNAME_LASTNAME" style="color: #221C35;">Savas Labs</a><span style="color: #F35A69"> — </span><a href="tel:+19196234097" style="color: #221C35;">919 623 4097</a></td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td height="18px" style="font-size: 0px;">&nbsp;</td>
+                  </tr>
+                </table>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif; color: #221C35; font-size: 16px;">We design and build<br>digital products.</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td height="16px" style="font-size: 0px;">&nbsp;</td>
+      </tr>
+    </table>
+  </template>
+</body>
+
+</html>

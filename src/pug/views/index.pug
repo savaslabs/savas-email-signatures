@@ -1,0 +1,32 @@
+extends ../templates/_root
+
+block body
+  
+  main
+    
+    header
+      h1 Savas Labs Email Signature Generator
+      
+    ol
+      li Fill out and submit the form below, which will download your signature file
+      li Open your <code>signature_firstname_lastname.html</code> file in Google Chrome
+      li Click the body of the webpage, select all (<kbd>⌘</kbd> + <kbd>a</kbd>), and copy (<kbd>⌘</kbd> + <kbd>c</kbd>) the page content
+      li Go to #[a(href='https://mail.google.com/mail/u/0/#settings/general', target='_blank') Google Mail Settings] and paste (<kbd>⌘</kbd> + <kbd>v</kbd>) the email signature into the the #[b Signature] field
+      li Scroll to the bottom of the page and click #[b Save Changes]
+      
+    form
+      fieldset
+        legend My Information
+        label
+          span First Name:
+          input#firstname(type='text', required)
+        label
+          span Last Name:
+          input#lastname(type='text', required)
+        label
+          span Title:
+          input#title(type='text', required)
+        button#submit(type='submit') Generate
+
+  template#signature
+    include ../includes/email
